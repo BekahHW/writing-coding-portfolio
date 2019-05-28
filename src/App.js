@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import NavBar from '../components/NavBar'
-import Home from '../components/Home'
-import Writing from './Writing'
-import Coding from './Coding'
+import NavBar from './components/NavBar'
+import Writing from './components/Writing'
+import Coding from './components/Coding'
 
 const App = () => (
   <div className="App">
@@ -12,7 +11,6 @@ const App = () => (
     <Router>
       <React.Fragment>
         <NavBar />
-        <Route exact path="/" component={Home} />
 
         <Route exact path="/writing" component={Writing} />
         <Route exact path="/coding" component={Coding} />
