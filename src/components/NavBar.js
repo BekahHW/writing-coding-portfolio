@@ -25,6 +25,10 @@ const styles = {
     color: "white",
   },
 
+  socialIcon: {
+    margin: 10,
+  }
+
 };
 
 const NavBar = (props) => {
@@ -42,10 +46,11 @@ const NavBar = (props) => {
             Logo
             </NavLink>
         </Typography>
-        <SocialIcon url="http://twitter.com/bekahhw" />
-        <SocialIcon url="https://www.instagram.com/bekahhw/" />
+        <SocialIcon className={classes.socialIcon} url="http://twitter.com/bekahhw" />
+        
+        <SocialIcon className={classes.socialIcon} url="https://www.instagram.com/bekahhw/" />
 
-        <SocialIcon url="https://www.linkedin.com/in/bekah-hawrot-weigel/" />
+        <SocialIcon className={classes.socialIcon} url="https://www.linkedin.com/in/bekah-hawrot-weigel/" />
         <NavLink
           to="/writing"><Button className={classes.menuButton} color="inherit">Writing</Button></NavLink>
         <NavLink
