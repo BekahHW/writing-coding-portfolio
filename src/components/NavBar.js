@@ -6,6 +6,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { NavLink } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
+
 
 
 const styles = {
@@ -31,6 +34,7 @@ const NavBar = (props) => {
     <AppBar position="static">
       <Toolbar>
 
+
         <Typography
           variant="h6" className={classes.grow}>
           <NavLink style={{ color: 'white', textDecoration: 'none' }}
@@ -38,7 +42,10 @@ const NavBar = (props) => {
             Logo
             </NavLink>
         </Typography>
+        <SocialIcon url="http://twitter.com/bekahhw" />
+        <SocialIcon url="https://www.instagram.com/bekahhw/" />
 
+        <SocialIcon url="https://www.linkedin.com/in/bekah-hawrot-weigel/" />
         <NavLink
           to="/writing"><Button className={classes.menuButton} color="inherit">Writing</Button></NavLink>
         <NavLink
