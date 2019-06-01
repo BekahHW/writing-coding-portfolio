@@ -31,14 +31,14 @@ const styles = {
   },
 
   socialIcon: {
-    margin: 10,
+    margin: 5,
   },
 
   logo: {
     width: 120,
     height: 100,
-    padding: 0,
-    margin: 0
+    padding: -5,
+    margin: -10
   },
 
 };
