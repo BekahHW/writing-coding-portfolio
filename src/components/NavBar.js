@@ -67,6 +67,8 @@ const NavBar = (props) => {
           to="/writing"><Button className={classes.menuButton} color="inherit">Writing</Button></NavLink>
         <NavLink
           to="/Coding"><Button className={classes.menuButton} color="inherit">Coding</Button></NavLink>
+        <NavLink
+          to="/About"><Button className={classes.menuButton} color="inherit">About</Button></NavLink>
 
       </Toolbar>
     </AppBar>
